@@ -19,7 +19,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $_SESSION['user_nom'] = $user['nom'];
         $_SESSION['user_prenom'] = $user['prenom'];
         
-        header("Location: profile.php"); // Redirige vers le profil
+        header("Location: appointment.php"); // Redirige vers le profil
         exit();
     } else {
         $errors[] = "Email ou mot de passe incorrect.";
